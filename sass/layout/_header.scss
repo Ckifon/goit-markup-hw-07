@@ -1,0 +1,166 @@
+.section-doing {
+    padding-top: 0px;
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px;
+}
+
+.page-header-container {
+    display: flex;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--logo-studio-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.page-navigation__logo {
+    margin-right: 93px;
+}
+
+span {
+    color: var(--secondary-text-color);
+}
+
+.menu-link-header {
+
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.menu__link {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    transition-property: color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+
+    &:hover,
+    &:focus,
+    &.current {
+        color: var(--secondary-text-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+        &.current::after {
+            position: absolute;
+            top: 44px;
+            background-color: var(--secondary-text-color);
+            display: block;
+            width: 48px;
+            height: 4px;
+            color: var(--secondary-text-color);
+            border-radius: 2px;
+            content: "";
+        }
+}
+
+
+
+.menu__link.current-portfolio::after {
+    position: absolute;
+    top: 44px;
+    background-color: var(--secondary-text-color);
+    display: block;
+    width: 72px;
+    height: 4px;
+    color: var(--secondary-text-color);
+    border-radius: 2px;
+    content: "";
+}
+
+.menu__link {
+    color: black;
+    position: relative;
+}
+
+.mail-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.mail-contact-block {
+    display: block;
+}
+
+.mail,
+.contact-phone-number {
+    align-items: center;
+    color: var(--primary-text-color-theme);
+    fill: currentColor;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.mail {
+    margin-right: 50px;
+}
+
+.contact-link {
+    transition-property: color;
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-text-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.contact-link-header {
+    display: flex;
+    align-items: center;
+}
+
+.icon-envelope {
+    margin-right: 10px;
+}
+
+
+.icon-smartphone {
+    margin-right: 10px;
+}
+
+.icon-preferens {
+    display: flex;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
