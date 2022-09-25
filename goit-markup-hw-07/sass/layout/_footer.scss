@@ -1,0 +1,70 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.address {
+    font-style: normal
+}
+
+.logo-footer {
+    color: var(--logo-studio-footer);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.adress-footer {
+    margin-bottom: 9px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.mail-footer {
+    margin-bottom: 9px;
+}
+
+.mail-footer,
+.contact-phone-number-footer {
+    color: var(--primary-text-color-theme);
+    transition-property: color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.06em;
+
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+        color: var(--secondary-text-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.footer-container-div-one {
+    width: 231px;
+    margin-right: 70px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.join {
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
