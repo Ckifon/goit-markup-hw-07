@@ -395,7 +395,7 @@ section {
   border-bottom: 1px;
 }
 
-.page-header-container {
+.page-header__container {
   display: flex;
 }
 
@@ -416,11 +416,11 @@ section {
   margin-right: 93px;
 }
 
-span {
+.accent, .accent-link {
   color: var(--secondary-text-color);
 }
 
-.menu-link-header {
+.menu__header {
   margin-left: auto;
 }
 
@@ -430,6 +430,8 @@ span {
 }
 
 .menu__link {
+  color: black;
+  position: relative;
   font-family: var(--primary-font);
   color: var(--primary-text-color);
   transition-property: color;
@@ -448,28 +450,18 @@ span {
   top: 44px;
   background-color: var(--secondary-text-color);
   display: block;
+  height: 4px;
+  color: var(--secondary-text-color);
+  border-radius: 2px;
+  content: "";
+}
+
+.current-width-index::after {
   width: 48px;
-  height: 4px;
-  color: var(--secondary-text-color);
-  border-radius: 2px;
-  content: "";
 }
 
-.menu__link.current-portfolio::after {
-  position: absolute;
-  top: 44px;
-  background-color: var(--secondary-text-color);
-  display: block;
+.current-width-portfolio::after {
   width: 72px;
-  height: 4px;
-  color: var(--secondary-text-color);
-  border-radius: 2px;
-  content: "";
-}
-
-.menu__link {
-  color: black;
-  position: relative;
 }
 
 .mail-contact {
@@ -518,26 +510,6 @@ span {
 
 .icon-smartphone {
   margin-right: 10px;
-}
-
-.icon-preferens {
-  display: flex;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: #F5F4FA;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut-1 {
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .section-busines {
@@ -605,6 +577,26 @@ span {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme);
+}
+
+.icon-preferens {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .caption {
@@ -824,7 +816,7 @@ container {
   width: 106px;
 }
 
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;

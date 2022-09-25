@@ -32,3 +32,24 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color-theme);
 }
+
+.icon-preferens {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
